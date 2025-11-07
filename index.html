@@ -1,12 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiniWeb grup GJS</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-</body>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MiniWeb grup GJS</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container header-inner">
+                <a href="#" class="logo" aria-label="Miniweb Grup X">
+                    <img src="img/logo.png" alt="Logotip Grup X" width="120" />
+                </a>
+
+                <nav aria-label="Navegació principal">
+                    <ul>
+                        <li><a href="#inici">Inici</a></li>
+                        <li><a href="#sobre-nosaltres">Sobre nosaltres</a></li>
+                        <li><a href="#contacte">Contacte</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="inici" class="hero">
+                <div class="hero-text">
+                    <h1>Benvinguts a la Miniweb del Grup X</h1>
+                    <p>
+                        Web col·laborativa creada pels alumnes de 2n de DAW com a
+                        exercici d'aprenentatge amb Git i GitHub.
+                    </p>
+                </div>
+            </section>
+
+            <section id="sobre-nosaltres" class="presentacio">
+                <h2>Presentació</h2>
+                <p>
+                    Som un grup d'estudiants que estem construint aquesta miniweb per
+                    practicar treball en equip, control de versions i desenvolupament
+                    web.
+                </p>
+
+                <aside class="valors">
+                    <h3>Els nostres valors</h3>
+                    <ul>
+                        <li>Col·laboració</li>
+                        <li>Qualitat</li>
+                        <li>Aprenentatge continu</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section id="recursos">
+                <h2>Recursos útils</h2>
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contacte" class="contact">
+                <h2>Contacte</h2>
+                <p>Deixa'ns un missatge o inscriu-te al nostre repo del projecte.</p>
+
+                <form action="#" method="post" aria-label="Formulari de contacte">
+                    <label for="nom">Nom:</label>
+                    <input id="nom" name="nom" type="text" />
+
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" />
+
+                    <label for="missatge">Missatge:</label>
+                    <textarea id="missatge" name="missatge" rows="4"></textarea>
+
+                    <button type="submit">Envia</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-inner">
+                <p>Projecte realitzat pel <strong>Grup X</strong> — 2n DAW</p>
+                <div class="social">
+                    <!-- icones socials a afegir a img/ (ex: github.svg, twitter.svg) -->
+                    <a href="#" aria-label="GitHub">
+                        <img src="img/github.svg" alt="GitHub" width="24" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
