@@ -1,0 +1,225 @@
+/* 🌐 Estils base per a la Miniweb col·laborativa - Grup GJS */
+
+/* ---------- RESET BÀSIC ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+/* ---------- ESTRUCTURA GENERAL ---------- */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ---------- CAPÇALERA ---------- */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  display: block;
+}
+
+/* ---------- NAVEGACIÓ ---------- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #ffdd57;
+}
+
+/* ---------- SECCIONS PRINCIPALS ---------- */
+main {
+  padding: 40px 0;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+/* ---------- HERO / INICI ---------- */
+.hero {
+  background: linear-gradient(to right, #0077cc, #0099ff);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* ---------- PRESENTACIÓ ---------- */
+.presentacio h2 {
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+.valors {
+  background-color: #eef6fb;
+  padding: 20px;
+  border-left: 4px solid #0077cc;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.valors h3 {
+  margin-bottom: 10px;
+}
+
+.valors ul {
+  list-style: square inside;
+}
+
+/* ---------- RECURSOS ---------- */
+#recursos ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#recursos li {
+  margin-bottom: 8px;
+}
+
+#recursos a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#recursos a:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+/* ---------- FORMULARI DE CONTACTE ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* ---------- PEU DE PÀGINA ---------- */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-inner p {
+  margin-bottom: 10px;
+}
+
+.social img {
+  vertical-align: middle;
+  transition: opacity 0.3s;
+}
+
+.social img:hover {
+  opacity: 0.8;
+}
+
+/* ---------- RESPONSIVITAT ---------- */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 10px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
